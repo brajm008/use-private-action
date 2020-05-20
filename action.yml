@@ -11,6 +11,9 @@ inputs:
   private-action-token:
     description: 'Token to access the private repository'
     required: true
+  private-action-with:
+    description: 'Pass string of (Yaml or Json dictionary of inputs) to be passed into the action being run'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/main.js'
